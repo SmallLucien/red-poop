@@ -1,0 +1,84 @@
+add_namespace = prc
+
+#Cooperation#
+country_event = {
+	id = prc.1
+	title = prc.1.t
+	desc = prc.1.d
+	picture = GFX_report_event_SAF_mandela
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = prc.1.a	
+		news_event = { id = old_times_news.48 hours = 6 }
+			add_opinion_modifier = {
+			target = PRC
+			modifier = SOV_pugo_cooperation_opinion
+			}
+
+			PRC = {
+			add_opinion_modifier = {
+			target = SOV
+			modifier = SOV_pugo_cooperation_opinion
+			}
+	            }	
+	}
+
+	option = {
+		name = prc.1.b		
+	}
+}
+
+#ww3 starts - time to invade taiwan#
+country_event = {
+	id = prc.2
+	title = prc.2.t
+	desc = prc.2.d
+	picture = GFX_report_event_SAF_mandela
+	
+	trigger = {
+		original_tag = PRC
+		USA = {has_war_with = SOV}
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = prc.2.a	
+		news_event = { id = old_times_news.76 hours = 6 }
+		    declare_war_on = {
+                target = CHI
+                type = annex_everything
+            }
+	}
+
+}
+
+#jintao time#
+country_event = {
+	id = prc.3
+	title = prc.3.t
+	desc = prc.3.d
+	picture = GFX_report_event_SAF_mandela
+	
+	trigger = {
+		original_tag = PRC
+		date > 2002.11.15
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = prc.3.a	
+		#news_event = { id = old_times_news.76 hours = 6 }
+		retire_country_leader = yes		
+		promote_character = PRC_hu_jintao
+
+	}
+
+}
+
+
+

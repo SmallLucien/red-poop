@@ -1,0 +1,66 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_super_event_picture"
+		textureFile = "gfx/super_events.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_event_window"
+		textureFile = "gfx/Super_Event_Window.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sp_event_close_button"
+		textureFile = "gfx/Super_Event_Close_Button.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_sp_event_South_African_War"
+		textureFile = "gfx/super_events/Super_Event_South_African_War.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_event_Soviet_Melancholy"
+		textureFile = "gfx/super_events/Super_Event_Soviet_Melancholy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sp_event_Yugo_War"
+		textureFile = "gfx/super_events/Super_Event_Yugo_War.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_event_Sino_Soviet_War"
+		textureFile = "gfx/super_events/Super_Event_Sino_Soviet_War.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_event_Soviet_Dissolution"
+		textureFile = "gfx/super_events/Super_Event_Soviet_Dissolution.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_event_Eastern_War"
+		textureFile = "gfx/super_events/Super_Event_Eastern_War.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_event_Soviet_Civil_War"
+		textureFile = "gfx/super_events/Super_Event_Soviet_Fall_Violent.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_event_Indochina_War"
+		textureFile = "gfx/super_events/Super_Event_Indochina_War.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_event_The_Theory_That_Was_Toolboxed"
+		textureFile = "gfx/super_events/Super_Event_The_Theory_That_Was_Toolboxed.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_event_World_War_3"
+		textureFile = "gfx/super_events/Super_Event_Sino_World_War_3.dds"
+	}
+
+}

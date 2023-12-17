@@ -1,0 +1,38 @@
+add_namespace = sudan
+
+#forced ceasefire since your noob ass couldnt kill south sudan#
+country_event = {
+	id = sudan.1
+	title = sudan.1.t
+	desc = sudan.1.d
+	picture = GFX_report_event_spark
+
+	fire_only_once = yes
+        
+    trigger = {
+		date > 2003.3.25
+		original_tag = SUD
+		SUD = {
+		has_defensive_war_with = SPL
+		}
+	}
+
+		#bruh#
+	option = {
+		name = sudan.1.a
+		add_political_power = -200
+		white_peace = SPL
+		SPL = {
+		set_cosmetic_tag = SPL_south_sudan
+							add_popularity = {
+							ideology = democratic
+							popularity = 0.25
+							}							
+							add_popularity = {
+							ideology = paternal_autocracy
+							popularity = 0.25
+							}
+		}
+		#maybe we can have a pro-us or pro-su coup happen after sudan loses
+	}
+}

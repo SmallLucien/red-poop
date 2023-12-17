@@ -1,0 +1,522 @@
+﻿add_namespace = ai_mod
+country_event = {
+	id = ai_mod.1
+	title = ai_mod.1.t
+	desc = ai_mod.1.d
+	picture = GFX_report_event_SOV_1991
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ai_mod.1.a
+
+		country_lock_all_division_template = yes
+
+		if = {
+			limit = {
+				has_template = "Marine Division"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Marine Division"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Worker's Militia"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Worker's Militia"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Armoured Division"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Armoured Division"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Mechanised Division"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Mechanised Division"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Infantry Division"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Infantry Division"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Patriotic Guard"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Patriotic Guard"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Bronetankovaya Diviziya"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Bronetankovaya Diviziya"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Motostrelkovaya Diviziya"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Motostrelkovaya Diviziya"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Desantno-shturmovaya Diviziya"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Desantno-shturmovaya Diviziya"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Artilleriyskaya Diviziya"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Artilleriyskaya Diviziya"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Tyazhelaya Artilleriyskaya Diviziya"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Tyazhelaya Artilleriyskaya Diviziya"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Diviziya Morskoy Pekhoty"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Diviziya Morskoy Pekhoty"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Vozdushno-desantnaya Diviziya"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Vozdushno-desantnaya Diviziya"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Diviziya Spetsnaza"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Diviziya Spetsnaza"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Air Assault Division"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Air Assault Division"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Paratrooper Division"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Paratrooper Division"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Militia"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Militia"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Armoured Infantry Division"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Armoured Infantry Division"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Thahan Phran"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Thahan Phran"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Reconnaissance Division"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Reconnaissance Division"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Commando Division"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Commando Division"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Militia Division"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Militia Division"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Artillery Division"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Artillery Division"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Motorized Division"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Motorized Division"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Light Infantry Division"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Light Infantry Division"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Soldats de la Défense du Congo"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Soldats de la Défense du Congo"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Milice de la DRC"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Milice de la DRC"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Kadogos"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Kadogos"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Armoured Republican Guard Division"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Armoured Republican Guard Division"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Militia Unit"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Militia Unit"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Firqat Haras Jumhuriun Musafaha"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Firqat Haras Jumhuriun Musafaha"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Firqat Mudaraea"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Firqat Mudaraea"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Alshuebat Alalia"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Alshuebat Alalia"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Firqat Alharas Aljumhurii Alalia"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Firqat Alharas Aljumhurii Alalia"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Firqat Mushaa"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Firqat Mushaa"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Firqat Alharas Aljumhurii"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Firqat Alharas Aljumhurii"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "IDF Division"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "IDF Division"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Regional Division"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Regional Division"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Amoured Brigade"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Amoured Brigade"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Self-Defence Forces"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Self-Defence Forces"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Firqat Alquaat Alkhasa"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Firqat Alquaat Alkhasa"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Alfirqat Almudaraeat Bialharas Althawrii"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Alfirqat Almudaraeat Bialharas Althawrii"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Alfirqat Almikanikiat Bialharas Althawrii"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Alfirqat Almikanikiat Bialharas Althawrii"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Air Assault Division"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Air Assault Division"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Firqat Alquaat Alkhasat Bialharas Althawrii"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Firqat Alquaat Alkhasat Bialharas Althawrii"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Rassemblement pour la démocratie congolaise Forces rebelles"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Rassemblement pour la démocratie congolaise Forces rebelles"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Rassemblement pour la Démocratie Congolaise Forces Rebelles - Division Artillerie"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Rassemblement pour la Démocratie Congolaise Forces Rebelles - Division Artillerie"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Airborne Division"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Airborne Division"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Royal Guard Division"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Royal Guard Division"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "National Guard Division"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "National Guard Division"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "kitengo cha watoto wachanga cha Uganda"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "kitengo cha watoto wachanga cha Uganda"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "JNA Division"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "JNA Division"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Milicja"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Milicja"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Montenegro Volunteers"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Montenegro Volunteers"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Bosnian Serb Volunteers"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Bosnian Serb Volunteers"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Firqat Mushat Alharas Althawrii"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Firqat Mushat Alharas Althawrii"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Armored Division"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Armored Division"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Allied Reaction Corps Division"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Allied Reaction Corps Division"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Border Defence Division"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Border Defence Division"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Republican Guard"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Republican Guard"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Mountain Division"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Mountain Division"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Armoured Republican Guard Division"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Armoured Republican Guard Division"
+			}
+		}
+		if = {
+			limit = {
+				has_template = "Mechanized Division"
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "Mechanized Division"
+			}
+		}
+	}
+}
+
+

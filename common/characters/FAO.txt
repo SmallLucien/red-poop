@@ -1,0 +1,27 @@
+characters = {
+
+	FAO_vladimir_shamanov = {
+		name = "Vladimir Shamanov"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/post_putin/Vladimir_Shamanov_normal.dds"
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+		corps_commander={
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+}

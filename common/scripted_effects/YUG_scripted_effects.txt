@@ -1,0 +1,260 @@
+YUG_stop_the_terror_attacks = {
+
+	set_country_flag = yug_no_more_terror_attacks
+	custom_effect_tooltip = yug_no_more_terror_attacks
+}
+
+YUG_remove_rebel_activity = {
+
+	104 = {
+		remove_dynamic_modifier = { modifier = YUG_bosnian_rebels }
+		set_demilitarized_zone = no
+		add_core_of = YUG
+
+	}
+
+	804 = {
+		remove_dynamic_modifier = { modifier = YUG_bosnian_rebels }
+		set_demilitarized_zone = no
+		add_core_of = YUG
+	}
+	
+	959 = {
+		remove_dynamic_modifier = { modifier = YUG_bosnian_rebels }
+		set_demilitarized_zone = no
+		add_core_of = YUG
+
+	}	
+
+	960 = {
+		remove_dynamic_modifier = { modifier = YUG_bosnian_rebels }
+		set_demilitarized_zone = no
+		add_core_of = YUG
+
+	}	
+
+	961 = {
+		remove_dynamic_modifier = { modifier = YUG_bosnian_rebels }
+		set_demilitarized_zone = no
+		add_core_of = YUG
+
+	}	
+	
+	802 = {
+		remove_dynamic_modifier = { modifier = YUG_kosovar_rebels }
+		set_demilitarized_zone = no
+		add_core_of = YUG
+
+	}	
+
+}
+
+YUG_remove_deportations = {
+
+	104 = {
+		remove_dynamic_modifier = { modifier = YUG_deportations }
+	}
+
+	804 = {
+		remove_dynamic_modifier = { modifier = YUG_deportations }
+	}
+	
+	964 = {
+		remove_dynamic_modifier = { modifier = YUG_deportations }
+	}	
+
+	106 = {
+		remove_dynamic_modifier = { modifier = YUG_deportations }
+	}	
+	
+	802 = {
+		remove_dynamic_modifier = { modifier = YUG_deportations }
+	}	
+
+}
+
+YUG_add_deportations = {
+	
+	if = {
+		limit = {YUG = {has_completed_focus = YUG_seselj_repopulation_programs}}
+		104 = {
+			add_dynamic_modifier = { modifier = YUG_deportations }
+		}
+
+		804 = {
+			add_dynamic_modifier = { modifier = YUG_deportations }
+		}
+		
+		964 = {
+			add_dynamic_modifier = { modifier = YUG_deportations }
+		}	
+
+		106 = {
+			add_dynamic_modifier = { modifier = YUG_deportations }
+		}	
+		
+		802 = {
+			add_dynamic_modifier = { modifier = YUG_deportations }
+		}	
+
+	}
+
+	if = {
+		limit = {YUG = {has_completed_focus = YUG_milosevic_deport_albanians_from_kosovo}}
+		802 = {
+			add_dynamic_modifier = { modifier = YUG_deportations }
+		}	
+	}
+	
+	else_if = {
+		
+	}
+	
+}
+
+YUG_improve_economic_health = {
+
+	subtract_from_variable = {YUG_economic_health_var = 1}			
+	custom_effect_tooltip = yug_our_economic_health_will_get_better
+	clamp_variable = {
+    var = YUG_economic_health_var
+    min = 0
+	max = 5
+	}
+}
+
+YUG_worsen_economic_health = {
+
+	add_to_variable = {YUG_economic_health_var = 1}			
+	custom_effect_tooltip = yug_our_economic_health_will_worsen
+	clamp_variable = {
+    var = YUG_economic_health_var
+    min = 0
+	max = 5
+	}
+}
+
+YUG_upgrade_ind_stage = {
+
+	if = {
+		limit =	{ 
+		check_variable = {yug_milo_industrial_prog > 99}
+		}
+		if = {
+			limit = {
+				has_idea = YUG_milo_prog_industry_stage_1
+			}
+			swap_ideas = {
+				remove_idea = YUG_milo_prog_industry_stage_1
+				add_idea = YUG_milo_prog_industry_stage_2
+			}
+			set_variable = {yug_milo_industrial_prog = 0}
+			set_variable = {YUG_milo_ind_stage_var = 2}						
+		}
+		if = {
+			limit = {
+				has_idea = YUG_milo_prog_industry_stage_2
+			}
+			swap_ideas = {
+				remove_idea = YUG_milo_prog_industry_stage_2
+				add_idea = YUG_milo_prog_industry_stage_3
+			}
+			set_variable = {yug_milo_industrial_prog = 0}
+			set_variable = {YUG_milo_ind_stage_var = 3}			
+		}
+		if = {
+			limit = {
+				has_idea = YUG_milo_prog_industry_stage_3
+			}
+			swap_ideas = {
+				remove_idea = YUG_milo_prog_industry_stage_3
+				add_idea = YUG_milo_prog_industry_stage_4
+			}
+			set_variable = {yug_milo_industrial_prog = 0}
+			set_variable = {YUG_milo_ind_stage_var = 4}			
+		}	
+		if = {
+			limit = {
+				has_idea = YUG_milo_prog_industry_stage_4
+			}
+			swap_ideas = {
+				remove_idea = YUG_milo_prog_industry_stage_4
+				add_idea = YUG_milo_prog_industry_stage_5
+			}
+			set_variable = {yug_milo_industrial_prog = 0}
+			set_variable = {YUG_milo_ind_stage_var = 5}		
+		}
+	}
+
+	else_if = {}
+}
+
+YUG_upgrade_tech_stage = {
+
+	if = {
+		limit =	{
+		check_variable = {yug_milo_tech_prog > 99}
+		}
+		if = {
+			limit = {
+				has_idea = YUG_milo_prog_tech_stage_1
+			}
+			swap_ideas = {
+				remove_idea = YUG_milo_prog_tech_stage_1
+				add_idea = YUG_milo_prog_tech_stage_2
+			}
+			set_variable = {yug_milo_tech_prog = 0}
+			set_variable = {YUG_milo_tech_stage_var = 2}
+		}
+		if = {
+			limit = {
+				has_idea = YUG_milo_prog_tech_stage_2
+			}
+			swap_ideas = {
+				remove_idea = YUG_milo_prog_tech_stage_2
+				add_idea = YUG_milo_prog_tech_stage_3
+			}
+			set_variable = {yug_milo_tech_prog = 0}
+			set_variable = {YUG_milo_tech_stage_var = 3}			
+		}
+		if = {
+			limit = {
+				has_idea = YUG_milo_prog_tech_stage_3
+			}
+			swap_ideas = {
+				remove_idea = YUG_milo_prog_tech_stage_3
+				add_idea = YUG_milo_prog_tech_stage_4
+			}
+			set_variable = {yug_milo_tech_prog = 0}	
+			set_variable = {YUG_milo_tech_stage_var = 4}			
+		}	
+		if = {
+			limit = {
+				has_idea = YUG_milo_prog_tech_stage_4
+			}
+			swap_ideas = {
+				remove_idea = YUG_milo_prog_tech_stage_4
+				add_idea = YUG_milo_prog_tech_stage_5
+			}
+			set_variable = {yug_milo_tech_prog = 0}	
+			set_variable = {YUG_milo_tech_stage_var = 5}			
+		}
+	}
+
+	else_if = {}
+}
+
+
+YUG_clamper = {
+
+	clamp_variable = {
+		var = yug_milo_industrial_prog
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = yug_milo_tech_prog
+		min = 0
+		max = 100
+	}
+}

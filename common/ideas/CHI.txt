@@ -1,0 +1,24 @@
+ideas = {
+
+	country = {
+
+		CHI_third_taiwan_strait_crisis = {
+			name = CHI_third_taiwan_strait_crisis_idea_name
+
+			removal_cost = -1
+
+			picture = PRC_CHI_third_taiwan_strait_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = 0.15
+				political_power_gain = 0.2
+			}
+		}
+
+	}
+
+}

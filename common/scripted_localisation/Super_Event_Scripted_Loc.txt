@@ -1,0 +1,227 @@
+#Titles
+defined_text = {
+    name = get_super_event_title
+	
+    text = {
+        trigger = {
+            has_global_flag = SAF_war_super_event
+        }
+        localization_key = "sp_event_South_Africa_War"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = YUG_War
+        }
+        localization_key = "sp_event_Yugo_War"
+    }
+
+	text = {
+        trigger = {
+            has_global_flag = Soviet_Melancholy
+        }
+        localization_key = "sp_event_Soviet_Melancholy"
+    }
+
+	text = {
+        trigger = {
+            has_global_flag = SOV_Chinese_War
+        }
+        localization_key = "sp_event_Sino_Sov_War"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Eastern_War
+        }
+        localization_key = "sp_event_Eastern_War"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Soviet_Dissolution
+        }
+        localization_key = "sp_event_Soviet_Dissolution"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Red_Susk
+        }
+        localization_key = "sp_event_Red_Susk"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Soviet_Civil_War
+        }
+        localization_key = "sp_event_Soviet_Civil_War"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Indochina_War
+        }
+        localization_key = "sp_event_Indochinese_War"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = WW3
+        }
+        localization_key = "sp_event_World_War_3"
+    }
+	
+}
+
+#Remarks
+defined_text = {
+    name = get_super_event_remark
+    
+    text = { 
+        trigger = {
+            has_global_flag = SAF_war_super_event
+        }
+        localization_key = "sp_event_South_Africa_War_REMARK"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Indochina_War
+        }
+        localization_key = "sp_event_Indochinese_War_REMARK"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = YUG_War
+        }
+        localization_key = "sp_event_Yugo_War_REMARK"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Soviet_Civil_War
+        }
+        localization_key = "sp_event_Soviet_Civil_War_REMARK"
+    }
+
+	text = {
+        trigger = {
+            has_global_flag = Soviet_Melancholy
+        }
+        localization_key = "sp_event_Soviet_Melancholy_REMARK"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = SOV_Chinese_War
+        }
+        localization_key = "sp_event_Sino_Sov_War_REMARK"
+    }
+
+	text = {
+        trigger = {
+            has_global_flag = Eastern_War
+        }
+        localization_key = "sp_event_Eastern_War_REMARK"
+    }
+
+	text = {
+        trigger = {
+            has_global_flag = Soviet_Dissolution
+        }
+        localization_key = "sp_event_Soviet_Dissolution_REMARK"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Red_Susk
+        }
+        localization_key = "sp_event_Red_Susk_REMARK"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = WW3
+        }
+        localization_key = "sp_event_World_War_3_REMARK"
+    }
+	
+}
+
+#Quotes
+defined_text = {
+    name = get_super_event_quote
+    
+    text = {
+        trigger = {
+            has_global_flag = SAF_war_super_event
+        }
+        localization_key = "sp_event_South_Africa_War_QUOTE"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Indochina_War
+        }
+        localization_key = "sp_event_Indochinese_War_QUOTE"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Soviet_Civil_War
+        }
+        localization_key = "sp_event_Soviet_Civil_War_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = YUG_War
+        }
+        localization_key = "sp_event_Yugo_War_QUOTE"
+    }
+
+	text = {
+        trigger = {
+            has_global_flag = Soviet_Melancholy
+        }
+        localization_key = "sp_event_Soviet_Melancholy_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = SOV_Chinese_War
+        }
+        localization_key = "sp_event_Sino_Sov_War_QUOTE"
+    }
+
+	text = {
+        trigger = {
+            has_global_flag = Eastern_War
+        }
+        localization_key = "sp_event_Eastern_War_QUOTE"
+    }
+
+	text = {
+        trigger = {
+            has_global_flag = Soviet_Dissolution
+        }
+        localization_key = "sp_event_Soviet_Dissolution_QUOTE"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Red_Susk
+        }
+        localization_key = "sp_event_Red_Susk_QUOTE"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = WW3
+        }
+        localization_key = "sp_event_World_War_3_QUOTE"
+    }
+	
+}

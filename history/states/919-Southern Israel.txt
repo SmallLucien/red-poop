@@ -1,0 +1,25 @@
+
+state={
+	id=919
+	name="STATE_919" #Southern Israel
+	manpower = 296700
+	
+	state_category = rural
+
+	history={
+		owner = ISR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			nuclear_reactor = 1
+		}
+		add_core_of = PAL
+		add_core_of = ISR
+	}
+
+	provinces={
+		1015 4088 7176 11970 1
+	}
+
+	local_supplies=0.0 
+}

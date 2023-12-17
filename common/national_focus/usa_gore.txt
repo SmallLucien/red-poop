@@ -1,0 +1,929 @@
+﻿focus_tree = {
+	id = usa_gore_focus
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 0
+			tag = USA
+		}
+	}
+	
+	default = no
+	shared_focus = USA_the_giant_wakes_again
+	
+	focus = {
+		id = USA_gore_gore_in_office
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 10
+		y = 0
+
+		prerequisite = {}
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = {id = usa_gore.1}
+		}
+	}
+	
+	focus = {
+		id = USA_gore_guess_whos_back
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 1
+
+		prerequisite = {focus = USA_gore_gore_in_office}
+		mutually_exclusive = { }
+		relative_position_id = USA_gore_gore_in_office
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_gore_what_the_hell_happened_to_us
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 2
+
+		prerequisite = {focus = USA_gore_guess_whos_back}
+		mutually_exclusive = { }
+		relative_position_id = USA_gore_gore_in_office
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_gore_democrat_values
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -6
+		y = 1
+
+		prerequisite = {focus = USA_gore_what_the_hell_happened_to_us}
+		mutually_exclusive = { }
+		relative_position_id = USA_gore_what_the_hell_happened_to_us
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_gore_a_new_modernity
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -1
+		y = 1
+
+		prerequisite = {focus = USA_gore_democrat_values}
+		mutually_exclusive = {focus = USA_gore_make_amends_with_dixie}
+		relative_position_id = USA_gore_democrat_values
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_gore_put_our_past_behind_us
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -1
+		y = 2
+
+		prerequisite = {focus = USA_gore_a_new_modernity}
+		mutually_exclusive = { }
+		relative_position_id = USA_gore_democrat_values
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_gore_lighter_hand_on_drugs
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -2
+		y = 3
+
+		prerequisite = {focus = USA_gore_put_our_past_behind_us}
+		mutually_exclusive = { }
+		relative_position_id = USA_gore_democrat_values
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_gore_fund_female_studies
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -1
+		y = 4
+
+		prerequisite = {focus = USA_gore_lighter_hand_on_drugs}
+		mutually_exclusive = { }
+		relative_position_id = USA_gore_democrat_values
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}	
+	
+	focus = {
+		id = USA_gore_sweeping_gun_reform
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 3
+
+		prerequisite = {focus = USA_gore_put_our_past_behind_us focus = USA_gore_christian_morality}
+		mutually_exclusive = { }
+		relative_position_id = USA_gore_democrat_values
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_gore_make_amends_with_dixie
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 1
+		y = 1
+
+		prerequisite = {focus = USA_gore_democrat_values}
+		mutually_exclusive = {focus = USA_gore_a_new_modernity}
+		relative_position_id = USA_gore_democrat_values
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_gore_christian_morality
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 1
+		y = 2
+
+		prerequisite = {focus = USA_gore_make_amends_with_dixie}
+		mutually_exclusive = { }
+		relative_position_id = USA_gore_democrat_values
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_gore_working_class_benefits
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 2
+		y = 3
+
+		prerequisite = {focus = USA_gore_christian_morality}
+		mutually_exclusive = { }
+		relative_position_id = USA_gore_democrat_values
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = USA_gore_moderate_immigration_reform
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 1
+		y = 4
+
+		prerequisite = {focus = USA_gore_working_class_benefits}
+		mutually_exclusive = { }
+		relative_position_id = USA_gore_democrat_values
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}	
+	
+	focus = {
+		id = USA_gore_modern_men_modern_dem
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 5
+
+		prerequisite = {focus = USA_gore_moderate_immigration_reform focus = USA_gore_fund_female_studies}
+		mutually_exclusive = { }
+		relative_position_id = USA_gore_democrat_values
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_gore_gores_namesake_legislations
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 1
+
+		prerequisite = {focus = USA_gore_what_the_hell_happened_to_us}
+		mutually_exclusive = { }
+		relative_position_id = USA_gore_what_the_hell_happened_to_us
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_gore_tax_the_pollutants
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -2
+		y = 1
+
+		prerequisite = {focus = USA_gore_gores_namesake_legislations}
+		mutually_exclusive = { }
+		relative_position_id = USA_gore_gores_namesake_legislations
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_gore_washington_climate_accords
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -2
+		y = 2
+
+		prerequisite = {focus = USA_gore_tax_the_pollutants}
+		mutually_exclusive = { }
+		relative_position_id = USA_gore_gores_namesake_legislations
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_gore_green_initiatives
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 1
+
+		prerequisite = {focus = USA_gore_gores_namesake_legislations}
+		mutually_exclusive = { }
+		relative_position_id = USA_gore_gores_namesake_legislations
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_gore_the_epas_best_friend
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 2
+
+		prerequisite = {focus = USA_gore_green_initiatives}
+		mutually_exclusive = { }
+		relative_position_id = USA_gore_gores_namesake_legislations
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_gore_hippies_in_suits
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 2
+		y = 1
+
+		prerequisite = {focus = USA_gore_gores_namesake_legislations}
+		mutually_exclusive = { }
+		relative_position_id = USA_gore_gores_namesake_legislations
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_gore_give_trees_a_chance
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 2
+		y = 2
+
+		prerequisite = {focus = USA_gore_hippies_in_suits}
+		mutually_exclusive = { }
+		relative_position_id = USA_gore_gores_namesake_legislations
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_gore_subsidize_the_planters
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -1
+		y = 3
+
+		prerequisite = {focus = USA_gore_the_epas_best_friend focus = USA_gore_washington_climate_accords}
+		mutually_exclusive = {focus = USA_gore_let_it_grow}
+		relative_position_id = USA_gore_gores_namesake_legislations
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_gore_let_it_grow
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 1
+		y = 3
+
+		prerequisite = {focus = USA_gore_the_epas_best_friend focus = USA_gore_give_trees_a_chance}
+		mutually_exclusive = {focus = USA_gore_subsidize_the_planters}
+		relative_position_id = USA_gore_gores_namesake_legislations
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_gore_the_gore_lieberman_green_bill
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 4
+
+		prerequisite = {focus = USA_gore_subsidize_the_planters focus = USA_gore_let_it_grow}
+		mutually_exclusive = { }
+		relative_position_id = USA_gore_gores_namesake_legislations
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_gore_conserve_what_conservatives_wont
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 5
+
+		prerequisite = {focus = USA_gore_the_gore_lieberman_green_bill}
+		mutually_exclusive = { }
+		relative_position_id = USA_gore_gores_namesake_legislations
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_gore_an_agrarian_agenda
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 6
+		y = 1
+
+		prerequisite = {focus = USA_gore_what_the_hell_happened_to_us}
+		mutually_exclusive = { }
+		relative_position_id = USA_gore_what_the_hell_happened_to_us
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_gore_our_southern_friends
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 1
+
+		prerequisite = {focus = USA_gore_an_agrarian_agenda}
+		mutually_exclusive = { }
+		relative_position_id = USA_gore_an_agrarian_agenda
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_gore_the_corn_belts_conundrum
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -1
+		y = 2
+
+		prerequisite = {focus = USA_gore_our_southern_friends}
+		mutually_exclusive = { }
+		relative_position_id = USA_gore_an_agrarian_agenda
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_gore_work_with_the_greens
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -1
+		y = 3
+
+		prerequisite = {focus = USA_gore_the_corn_belts_conundrum}
+		mutually_exclusive = {focus = USA_gore_neoliberal_economics}
+		relative_position_id = USA_gore_an_agrarian_agenda
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_gore_regulate_the_industrialists
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 1
+		y = 2
+
+		prerequisite = {focus = USA_gore_our_southern_friends}
+		mutually_exclusive = { }
+		relative_position_id = USA_gore_an_agrarian_agenda
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_gore_neoliberal_economics
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 1
+		y = 3
+
+		prerequisite = {focus = USA_gore_regulate_the_industrialists}
+		mutually_exclusive = {focus = USA_gore_work_with_the_greens}
+		relative_position_id = USA_gore_an_agrarian_agenda
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_gore_a_liveable_wage_for_liveable_labor
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -3
+		y = 4
+
+		prerequisite = {focus = USA_gore_work_with_the_greens}
+		mutually_exclusive = { }
+		relative_position_id = USA_gore_an_agrarian_agenda
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_gore_the_medicare_management_act
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -1
+		y = 4
+
+		prerequisite = {focus = USA_gore_work_with_the_greens focus = USA_gore_neoliberal_economics}
+		mutually_exclusive = { }
+		relative_position_id = USA_gore_an_agrarian_agenda
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_gore_honest_taxation_brackets
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 1
+		y = 4
+
+		prerequisite = {focus = USA_gore_work_with_the_greens focus = USA_gore_neoliberal_economics}
+		mutually_exclusive = { }
+		relative_position_id = USA_gore_an_agrarian_agenda
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_gore_decrease_the_tariffs
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 3
+		y = 4
+
+		prerequisite = {focus = USA_gore_neoliberal_economics}
+		mutually_exclusive = { }
+		relative_position_id = USA_gore_an_agrarian_agenda
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_gore_new_deal_dilemma
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -1
+		y = 5
+
+		prerequisite = {focus = USA_gore_a_liveable_wage_for_liveable_labor focus = USA_gore_the_medicare_management_act focus = USA_gore_honest_taxation_brackets}
+		mutually_exclusive = { }
+		relative_position_id = USA_gore_an_agrarian_agenda
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_gore_defeat_the_deficit
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 1
+		y = 5
+
+		prerequisite = {focus = USA_gore_the_medicare_management_act focus = USA_gore_honest_taxation_brackets focus = USA_gore_decrease_the_tariffs}
+		mutually_exclusive = { }
+		relative_position_id = USA_gore_an_agrarian_agenda
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_gore_a_new_greener_deal
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 7
+
+		prerequisite = {focus = USA_gore_modern_men_modern_dem}
+		prerequisite = {focus = USA_gore_conserve_what_conservatives_wont}
+		prerequisite = {focus = USA_gore_new_deal_dilemma}
+		prerequisite = {focus = USA_gore_defeat_the_deficit}
+
+		mutually_exclusive = { }
+		relative_position_id = USA_gore_what_the_hell_happened_to_us
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+}

@@ -1,0 +1,51 @@
+﻿l_english:
+sp_event_Yugo_War:0 "The Yugoslav War"
+sp_event_Yugo_War_QUOTE:0 "If you saw what I see for the future in Yugoslavia, it would scare you. \n- Josip Broz Tito"
+sp_event_Yugo_War_REMARK:0 "A Dream, Shattered"
+
+sp_event_South_Africa_War:0 "The South African Civil War"
+sp_event_South_Africa_War_QUOTE:0 "You cannot carry out a fundamental change without a certain ammount of madness. \n- Thomas Sankara"
+sp_event_South_Africa_War_REMARK:0 "Dark Continent Burns"
+
+sp_event_Sino_Sov_War:0 "The Sino-Soviet War"
+sp_event_Sino_Sov_War_QUOTE:0 "Who are our enemies? Who are our friends? This is a question of the first importance for the revolution. \n- Mao Tse Tung"
+sp_event_Sino_Sov_War_REMARK:0 "Two Starts, One Sky"
+
+sp_event_Eastern_War:0 "The Eastern European War"
+sp_event_Eastern_War_QUOTE:0 "Everyone imposes his own system as far as his army can reach.\n- Joseph Stalin"
+sp_event_Eastern_War_REMARK:0 "Onwards Comrades!"
+
+sp_event_Soviet_Dissolution:0 "The Soviet Dissolution"
+sp_event_Soviet_Dissolution_QUOTE:0 "And today I am worried by our people's loss the citizenship of a great country. The consequences may turn out to be hard for everyone.\n- Mikhail Gorbachev"
+sp_event_Soviet_Dissolution_REMARK:0 "Goodbye Forever..."
+
+sp_event_Soviet_Melancholy:0 "The Soviet Melancholy"
+sp_event_Soviet_Melancholy_QUOTE:0 "The revolution seems like sheer madness to those whom it sweeps aside and overthrows.\n- Leon Trotsky"
+sp_event_Soviet_Melancholy_REMARK:0 "A Union Frozen in Time"
+
+sp_event_Soviet_Civil_War:0 "The Soviet Civil War"
+sp_event_Soviet_Civil_War_QUOTE:0 "You can make a throne of bayonets but you can't sit on it for long.\n- Boris Yeltsin"
+sp_event_Soviet_Civil_War_REMARK:0 "Darkest Night Ahead"
+
+sp_event_Indochinese_War:0 "The Fourth Indochina War"
+sp_event_Indochinese_War_QUOTE:0 "It may take three years, it may take five, it may take ten, but that will be the war of Indo-china.\n- Ho Chi Minh"
+sp_event_Indochinese_War_REMARK:0 "Indochina Ablaze"
+
+sp_event_World_War_3:0 "World War III"
+sp_event_World_War_3_QUOTE:0 "Only the dead have seen the end of war.\n- Plato"
+sp_event_World_War_3_REMARK:0 "The End is Nigh..."
+
+
+###SOVIET CIVIL WAR REUNIFICATIONS###
+
+sp_event_navy:0 "Russian Reunification"
+sp_event_navy_QUOTE:0 "My whole life has been the Soviet Navy. I made my choice when young and have never regretted it.\n- Nikolai Kuznetsov"
+sp_event_navy_REMARK:0 "And Avrora Fires Again!"
+
+###LE FUNNY###
+
+sp_event_Red_Susk:0 "The Red Susk"
+sp_event_Red_Susk_QUOTE:0 "Oh hello sexy, mind if I have a lick?"
+sp_event_Red_Susk_REMARK:0 "petah the horse is here"
+
+

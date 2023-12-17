@@ -1,0 +1,27 @@
+﻿capital = 927
+
+##oob = ""
+
+set_convoys = 5
+
+recruit_character = TAM_Velupillai_Prabhakaran
+
+add_ideas = ussr_aligned_nation
+
+declare_war_on = {
+	target = SRL
+	type = annex_everything
+}
+
+set_politics = {
+	ruling_party = socialism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 20
+	fascism = 20
+	socialism = 60
+	neutrality = 0
+}

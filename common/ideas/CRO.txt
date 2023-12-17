@@ -1,0 +1,24 @@
+ideas = {
+	
+	country = {
+	
+		CRO_aftermath_of_the_krajina_war = {
+			name = CRO_aftermath_of_the_krajina_war_name
+
+			removal_cost = -1
+
+			picture = CRO_aftermath_of_the_krajina_war_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				war_support_factor = -0.20
+				training_time_army_factor = -0.05
+			}
+		}
+
+	}
+
+}

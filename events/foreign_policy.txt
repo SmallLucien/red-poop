@@ -1,0 +1,764 @@
+add_namespace = foreign_policy
+add_namespace = foreign_policy_award
+
+#ethiopia war#
+country_event = {
+	id = foreign_policy.1
+	title = foreign_policy.1.t
+	desc = foreign_policy.1.d
+	
+	is_triggered_only = yes
+	
+	#back ethiopia
+	option = {
+		name = foreign_policy.1.a	
+		set_country_flag = backed_ethiopia
+		custom_effect_tooltip = foreign_policy_explanation
+	}
+	
+	#back Eritrea
+	option = {
+		name = foreign_policy.1.b
+		set_country_flag = backed_eritrea	
+		custom_effect_tooltip = foreign_policy_explanation		
+	}
+}
+
+#the war results arrived#
+country_event = {
+	id = foreign_policy_award.1
+	title = foreign_policy_award.1.t
+	desc = foreign_policy_award.1.d
+	
+	trigger = {
+		ETH = {has_war = no}
+		OR = {
+			has_country_flag = backed_ethiopia
+			has_country_flag = backed_eritrea
+		}
+	
+	}
+	
+	fire_only_once = yes
+	
+	#ethiopia won
+	option = {
+		name = foreign_policy_award.1.a	
+		trigger = {
+			country_exists = ETH
+		}
+		if = {
+			limit = {has_country_flag = backed_ethiopia}
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_offsite_building = { type = arms_factory level = 1 }			
+			add_political_power = 75
+			ETH = {
+				add_opinion_modifier = { target = FROM modifier = supported_us }
+			}			
+		}
+		else_if = {
+			add_political_power = -75
+			ETH = {
+				add_opinion_modifier = { target = FROM modifier = supported_the_enemy }
+			}
+		}
+	}
+	
+	#Eritrea won
+	option = {
+		name = foreign_policy_award.1.b
+		trigger = {
+			country_exists = ERI
+		}
+		if = {
+			limit = {has_country_flag = backed_eritrea}
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_offsite_building = { type = arms_factory level = 1 }	
+			add_political_power = 75
+			ERI = {
+				add_opinion_modifier = { target = FROM modifier = supported_us }
+			}			
+		}	
+		else_if = {
+			add_political_power = -75
+			ERI = {
+				add_opinion_modifier = { target = FROM modifier = supported_the_enemy }
+			}			
+		}		
+	}
+}
+
+#congo war#
+country_event = {
+	id = foreign_policy.2
+	title = foreign_policy.2.t
+	desc = foreign_policy.2.d
+	
+	is_triggered_only = yes
+	
+	#back gov
+	option = {
+		name = foreign_policy.2.a	
+		set_country_flag = backed_congo_gov
+		custom_effect_tooltip = foreign_policy_explanation
+	}
+	
+	#back rck
+	option = {
+		name = foreign_policy.2.b
+		set_country_flag = backed_rcd_k	
+		custom_effect_tooltip = foreign_policy_explanation		
+	}
+	
+	#back rgo
+	option = {
+		name = foreign_policy.2.b
+		set_country_flag = backed_rcd_g
+		custom_effect_tooltip = foreign_policy_explanation		
+	}
+}
+
+#the war results arrived#
+country_event = {
+	id = foreign_policy_award.2
+	title = foreign_policy_award.2.t
+	desc = foreign_policy_award.2.d
+	
+	trigger = {
+		COG = {has_war = no}
+		RGO = {has_war = no}	
+		RCK = {has_war = no}				
+		OR = {
+			has_country_flag = backed_congo_gov
+			has_country_flag = backed_rcd_k
+			has_country_flag = backed_rcd_g			
+		}
+	
+	}
+	
+	fire_only_once = yes
+	
+	#congo gov won
+	option = {
+		name = foreign_policy_award.2.a	
+		trigger = {
+			country_exists = COG
+		}
+		if = {
+			limit = {has_country_flag = backed_congo_gov}
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_offsite_building = { type = arms_factory level = 1 }			
+			add_political_power = 75
+			COG = {
+				add_opinion_modifier = { target = FROM modifier = supported_us }
+			}	
+		}
+		else_if = {
+			add_political_power = -75
+			COG = {
+				add_opinion_modifier = { target = FROM modifier = supported_the_enemy }
+			}	
+		}
+	}
+	
+	#rcd k won
+	option = {
+		name = foreign_policy_award.2.b
+		trigger = {
+			country_exists = RCK
+		}
+		if = {
+			limit = {has_country_flag = backed_rcd_k}
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_offsite_building = { type = arms_factory level = 1 }	
+			add_political_power = 75
+			RCK = {
+				add_opinion_modifier = { target = FROM modifier = supported_us }
+			}				
+		}	
+		else_if = {
+			add_political_power = -75
+			RCK = {
+				add_opinion_modifier = { target = FROM modifier = supported_the_enemy }
+			}				
+		}		
+	}
+	
+	#rcd g won
+	option = {
+		name = foreign_policy_award.2.c
+		trigger = {
+			country_exists = RGO
+		}
+		if = {
+			limit = {has_country_flag = backed_rcd_g}
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_offsite_building = { type = arms_factory level = 1 }	
+			add_political_power = 75
+			RGO = {
+				add_opinion_modifier = { target = FROM modifier = supported_us }
+			}				
+		}	
+		else_if = {
+			add_political_power = -75
+			RGO = {
+				add_opinion_modifier = { target = FROM modifier = supported_the_enemy }
+			}				
+		}		
+	}
+}
+
+#sudan war#
+country_event = {
+	id = foreign_policy.3
+	title = foreign_policy.3.t
+	desc = foreign_policy.3.d
+	
+	is_triggered_only = yes
+	
+	#back sud
+	option = {
+		name = foreign_policy.3.a	
+		set_country_flag = backed_sud
+		custom_effect_tooltip = foreign_policy_explanation
+	}
+	
+	#back spl
+	option = {
+		name = foreign_policy.3.b
+		set_country_flag = backed_spl
+		custom_effect_tooltip = foreign_policy_explanation		
+	}
+	
+}
+
+#the war results arrived#
+country_event = {
+	id = foreign_policy_award.3
+	title = foreign_policy_award.3.t
+	desc = foreign_policy_award.3.d
+	
+	trigger = {
+		SUD = {has_war = no}
+			
+		OR = {
+			has_country_flag = backed_sud
+			has_country_flag = backed_spl
+	
+		}
+	
+	}
+	
+	fire_only_once = yes
+	
+	#sudan gov wins
+	option = {
+		name = foreign_policy_award.3.a	
+		trigger = {
+			country_exists = SUD
+		}
+		if = {
+			limit = {has_country_flag = backed_sud}
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_offsite_building = { type = arms_factory level = 1 }			
+			add_political_power = 75
+			SUD = {
+				add_opinion_modifier = { target = FROM modifier = supported_us }
+			}				
+		}
+		else_if = {
+			add_political_power = -75
+			SUD = {
+				add_opinion_modifier = { target = FROM modifier = supported_the_enemy }
+			}				
+		}
+	}
+	
+	#south sudan wins
+	option = {
+		name = foreign_policy_award.3.b
+		trigger = {
+			country_exists = SPL
+		}
+		if = {
+			limit = {has_country_flag = backed_spl}
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_offsite_building = { type = arms_factory level = 1 }	
+			add_political_power = 75
+			SPL = {
+				add_opinion_modifier = { target = FROM modifier = supported_us }
+			}				
+		}	
+		else_if = {
+			add_political_power = -75
+			SPL = {
+				add_opinion_modifier = { target = FROM modifier = supported_the_enemy }
+			}				
+		}		
+	}
+	
+		#no one wins
+	option = {
+		name = foreign_policy_award.3.c
+		trigger = {
+			country_exists = SPL
+			country_exists = SUD			
+		}
+		custom_effect_tooltip = "we didnt win"		
+		add_political_power = -1
+		custom_effect_tooltip = "we didnt lose"				
+		add_political_power = 1
+	}
+	
+}
+
+#yemeni civil war war#
+country_event = {
+	id = foreign_policy.4
+	title = foreign_policy.4.t
+	desc = foreign_policy.4.d
+	
+	is_triggered_only = yes
+	
+	#back yem
+	option = {
+		name = foreign_policy.4.a	
+		set_country_flag = backed_yem
+		custom_effect_tooltip = foreign_policy_explanation
+	}
+	
+	#back dyr
+	option = {
+		name = foreign_policy.4.b
+		set_country_flag = backed_dyr
+		custom_effect_tooltip = foreign_policy_explanation		
+	}
+	
+}
+
+#the war results arrived#
+country_event = {
+	id = foreign_policy_award.4
+	title = foreign_policy_award.4.t
+	desc = foreign_policy_award.4.d
+	
+	trigger = {
+		EGY = {has_war = no}
+			
+		OR = {
+			has_country_flag = backed_yem
+			has_country_flag = backed_dyr
+	
+		}
+	
+	}
+	
+	fire_only_once = yes
+	
+	#yemen wins
+	option = {
+		name = foreign_policy_award.4.a	
+		trigger = {
+			country_exists = YEM
+		}
+		if = {
+			limit = {has_country_flag = backed_yem}
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_offsite_building = { type = arms_factory level = 1 }			
+			add_political_power = 75
+			YEM = {
+				add_opinion_modifier = { target = FROM modifier = supported_us }
+			}		
+			SAU = {
+				add_opinion_modifier = { target = FROM modifier = supported_us }
+			}				
+		}
+		else_if = {
+			add_political_power = -75
+			YEM = {
+				add_opinion_modifier = { target = FROM modifier = supported_the_enemy }
+			}		
+			SAU = {
+				add_opinion_modifier = { target = FROM modifier = supported_the_enemy }
+			}	
+		}
+	}
+	
+	#commie yemen wins
+	option = {
+		name = foreign_policy_award.4.b
+		trigger = {
+			country_exists = DYR
+		}
+		if = {
+			limit = {has_country_flag = backed_dyr}
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_offsite_building = { type = arms_factory level = 1 }	
+			add_political_power = 75
+			DYR = {
+				add_opinion_modifier = { target = FROM modifier = supported_us }
+			}		
+			EGY = {
+				add_opinion_modifier = { target = FROM modifier = supported_us }
+			}				
+		}	
+		else_if = {
+			add_political_power = -75
+			DYR = {
+				add_opinion_modifier = { target = FROM modifier = supported_the_enemy }
+			}		
+			EGY = {
+				add_opinion_modifier = { target = FROM modifier = supported_the_enemy }
+			}				
+		}		
+	}
+	
+}
+
+#yugoslav civil war#
+country_event = {
+	id = foreign_policy.5
+	title = foreign_policy.5.t
+	desc = foreign_policy.5.d
+	
+	is_triggered_only = yes
+	
+	#back yug
+	option = {
+		name = foreign_policy.5.a	
+		set_country_flag = backed_yug
+		custom_effect_tooltip = foreign_policy_explanation
+	}
+	
+	#back the rebels
+	option = {
+		name = foreign_policy.5.b
+		set_country_flag = backed_yug_rebel
+		custom_effect_tooltip = foreign_policy_explanation		
+	}
+	
+}
+
+#the war results arrived#
+country_event = {
+	id = foreign_policy_award.5
+	title = foreign_policy_award.5.t
+	desc = foreign_policy_award.5.d
+	
+	trigger = {
+		YUG = {has_war = no}
+			
+		OR = {
+			has_country_flag = backed_yug
+			has_country_flag = backed_yug_rebel
+	
+		}
+	
+	}
+	
+	fire_only_once = yes
+	
+	#yug wins
+	option = {
+		name = foreign_policy_award.5.a	
+		trigger = {
+			YUG = {owns_state = 104}
+		}
+		if = {
+			limit = {has_country_flag = backed_yug}
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_offsite_building = { type = arms_factory level = 1 }			
+			add_political_power = 75
+			YUG = {
+				add_opinion_modifier = { target = FROM modifier = supported_us }
+			}				
+		}
+		else_if = {
+			add_political_power = -75
+			YUG = {
+				add_opinion_modifier = { target = FROM modifier = supported_the_enemy }
+			}				
+		}
+	}
+	
+	#yug rebels wins
+	option = {
+		name = foreign_policy_award.5.b
+		trigger = {
+			country_exists = BOS
+		}
+		if = {
+			limit = {has_country_flag = backed_yug_rebel}
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_offsite_building = { type = arms_factory level = 1 }	
+			add_political_power = 75
+			BOS = {
+				add_opinion_modifier = { target = FROM modifier = supported_us }
+			}			
+			HRZ = {
+				add_opinion_modifier = { target = FROM modifier = supported_us }
+			}	
+			KOS = {
+				add_opinion_modifier = { target = FROM modifier = supported_us }
+			}	
+			MAC = {
+				add_opinion_modifier = { target = FROM modifier = supported_us }
+			}				
+		}	
+		else_if = {
+			add_political_power = -75
+			BOS = {
+				add_opinion_modifier = { target = FROM modifier = supported_the_enemy }
+			}			
+			HRZ = {
+				add_opinion_modifier = { target = FROM modifier = supported_the_enemy }
+			}	
+			KOS = {
+				add_opinion_modifier = { target = FROM modifier = supported_the_enemy }
+			}	
+			MAC = {
+				add_opinion_modifier = { target = FROM modifier = supported_the_enemy }
+			}				
+		}		
+	}
+	
+}
+
+#south african civil war war#
+country_event = {
+	id = foreign_policy.6
+	title = foreign_policy.6.t
+	desc = foreign_policy.6.d
+	
+	is_triggered_only = yes
+	
+	#back saf
+	option = {
+		name = foreign_policy.6.a	
+		set_country_flag = backed_saf
+		custom_effect_tooltip = foreign_policy_explanation
+	}
+	
+	#back anc
+	option = {
+		name = foreign_policy.6.b
+		set_country_flag = backed_anc
+		custom_effect_tooltip = foreign_policy_explanation		
+	}
+	
+}
+
+#the war results arrived#
+country_event = {
+	id = foreign_policy_award.6
+	title = foreign_policy_award.6.t
+	desc = foreign_policy_award.6.d
+	
+	trigger = {
+		SAF = {has_war = no}
+			
+		OR = {
+			has_country_flag = backed_saf
+			has_country_flag = backed_anc
+	
+		}
+	
+	}
+	
+	fire_only_once = yes
+	
+	#saf wins
+	option = {
+		name = foreign_policy_award.6.a	
+		trigger = {
+			country_exists = SAF
+		}
+		if = {
+			limit = {has_country_flag = backed_saf}
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_offsite_building = { type = arms_factory level = 1 }			
+			add_political_power = 75		
+			SAF = {
+				add_opinion_modifier = { target = FROM modifier = supported_us }
+			}				
+		}
+		else_if = {
+			add_political_power = -75
+			SAF = {
+				add_opinion_modifier = { target = FROM modifier = supported_the_enemy }
+			}	
+		}
+	}
+	
+	#anc wins
+	option = {
+		name = foreign_policy_award.6.b
+		trigger = {
+			country_exists = ANC
+		}
+		if = {
+			limit = {has_country_flag = backed_anc}
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_offsite_building = { type = arms_factory level = 1 }	
+			add_political_power = 75		
+			ANC = {
+				add_opinion_modifier = { target = FROM modifier = supported_us }
+			}				
+		}	
+		else_if = {
+			add_political_power = -75	
+			ANC = {
+				add_opinion_modifier = { target = FROM modifier = supported_the_enemy }
+			}				
+		}		
+	}
+	
+}
+
+#great middle east war#
+country_event = {
+	id = foreign_policy.7
+	title = foreign_policy.7.t
+	desc = foreign_policy.7.d
+	
+	is_triggered_only = yes
+	
+	#back sauds
+	option = {
+		name = foreign_policy.7.a	
+		set_country_flag = backed_sau
+		custom_effect_tooltip = foreign_policy_explanation
+	}
+	
+	#back green UAR
+	option = {
+		name = foreign_policy.7.b
+		set_country_flag = backed_dyr_uar
+		custom_effect_tooltip = foreign_policy_explanation		
+	}
+
+	#back saddam UAR
+	option = {
+		name = foreign_policy.7.c
+		set_country_flag = backed_irq
+		custom_effect_tooltip = foreign_policy_explanation		
+	}
+	
+}
+
+#the war results arrived#
+country_event = {
+	id = foreign_policy_award.7
+	title = foreign_policy_award.7.t
+	desc = foreign_policy_award.7.d
+	
+	trigger = {
+		IRQ = {has_war = no}
+		DYR = {has_war = no}
+		SAU = {has_war = no}
+			
+		OR = {
+			has_country_flag = backed_sau
+			has_country_flag = backed_dyr_uar
+			has_country_flag = backed_irq
+		}
+	
+	}
+	
+	fire_only_once = yes
+	
+	#sau wins
+	option = {
+		name = foreign_policy_award.7.a	
+		trigger = {
+			country_exists = SAU
+			SAU = {
+				NOT = {is_puppet_of = IRQ}
+			}	
+		}
+		if = {
+			limit = {has_country_flag = backed_sau}
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_offsite_building = { type = arms_factory level = 1 }			
+			add_political_power = 75		
+			SAU = {
+				add_opinion_modifier = { target = FROM modifier = supported_us }
+			}			
+			OMA = {
+				add_opinion_modifier = { target = FROM modifier = supported_us }
+			}	
+			UAE = {
+				add_opinion_modifier = { target = FROM modifier = supported_us }
+			}				
+		}
+		else_if = {
+			add_political_power = -75
+			SAU = {
+				add_opinion_modifier = { target = FROM modifier = supported_the_enemy }
+			}
+			OMA = {
+				add_opinion_modifier = { target = FROM modifier = supported_the_enemy }
+			}
+			UAE = {
+				add_opinion_modifier = { target = FROM modifier = supported_the_enemy }
+			}			
+		}
+	}
+	
+	#green uar wins
+	option = {
+		name = foreign_policy_award.7.b
+		trigger = {
+			DYR = {
+				owns_state = 659
+			
+			}	
+		}
+		if = {
+			limit = {has_country_flag = backed_dyr_uar}
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_offsite_building = { type = arms_factory level = 1 }	
+			add_political_power = 75		
+			DYR = {
+				add_opinion_modifier = { target = FROM modifier = supported_us }
+			}				
+		}	
+		else_if = {
+			add_political_power = -75	
+			DYR = {
+				add_opinion_modifier = { target = FROM modifier = supported_the_enemy }
+			}				
+		}		
+	}
+
+	#saddam uar wins
+	option = {
+		name = foreign_policy_award.7.c
+		trigger = {
+			IRQ = {
+				OR = {
+					owns_state = 292
+					SAU = {
+						is_puppet_of = IRQ
+					}					
+				}
+			}	
+		}
+		if = {
+			limit = {has_country_flag = backed_irq}
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_offsite_building = { type = arms_factory level = 1 }	
+			add_political_power = 75		
+			IRQ = {
+				add_opinion_modifier = { target = FROM modifier = supported_us }
+			}				
+		}	
+		else_if = {
+			add_political_power = -75	
+			IRQ = {
+				add_opinion_modifier = { target = FROM modifier = supported_the_enemy }
+			}				
+		}		
+	}
+	
+}

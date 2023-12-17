@@ -1,0 +1,48 @@
+characters = {
+
+	KOS_kosovo_liberation_army = {
+		name = "Kosovo Liberation Army"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KOS/liberation_army.dds"
+			}
+			army = {
+				large = "gfx/leaders/KOS/liberation_army.dds"			
+			}
+		}
+		country_leader = {
+			ideology = nationalist_military_junta
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	KOS_hashim_thaci = {
+		name = "Hashim Thaci"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KOS/Hashim_Thaci.dds"
+			}
+			army = {
+				large = "gfx/leaders/KOS/Hashim_Thaci.dds"			
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+}

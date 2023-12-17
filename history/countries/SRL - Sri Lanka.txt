@@ -1,0 +1,26 @@
+﻿capital = 422
+
+##oob = ""
+
+set_convoys = 5
+
+recruit_character = SRL_Chandrika_Kumaratunga
+recruit_character = SRL_Dingiri_Banda_Wijetunga
+recruit_character = SRL_Premakumar_Gunaratnam
+
+add_ideas = usa_aligned_nation
+
+set_politics = {
+	ruling_party = social_democracy
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	social_democracy = 35
+	socialism = 25
+	communism = 10
+	neutrality = 5
+	democratic = 25
+	
+}

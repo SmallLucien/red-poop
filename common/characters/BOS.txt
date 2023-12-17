@@ -1,0 +1,73 @@
+characters = {
+
+	BOS_bosnia_liberation_army = {
+		name = "Bosnia Liberation Army"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BOS/liberation_army.dds"
+			}
+			army = {
+				large = "gfx/leaders/BOS/liberation_army.dds"			
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+		corps_commander={
+			traits={ infantry_leader }
+			skill=6
+			attack_skill=3
+			defense_skill=4
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	
+	BOS_atif_dudakovic = {
+		name = "Atif Dudaković"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BOS/atif_dudakovic.dds"
+			}
+			army = {
+				large = "gfx/leaders/BOS/atif_dudakovic.dds"			
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+		corps_commander={
+			traits={ }
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=1
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	
+	BOS_gladimir_gojer = {
+		name = "Gradimir Gojer"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BOS/gojer.dds"
+			}
+
+		}
+		country_leader = {
+			ideology = social_democracy_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+}

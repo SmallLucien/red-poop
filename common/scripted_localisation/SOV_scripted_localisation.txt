@@ -1,0 +1,106 @@
+defined_text = {
+	name = culture_war_leaning
+	
+	text = {
+		trigger = {
+			check_variable = { sov_culture_war_variable > -1.4}
+			check_variable = { sov_culture_war_variable < 1.4}
+		}
+		localization_key = culture_war_leaning_balanced
+	}
+	
+	text = {
+		trigger = {
+			check_variable = { sov_culture_war_variable > 0}
+			check_variable = { sov_culture_war_variable < 2.9}
+		}
+		localization_key = culture_war_leaning_slightly_conservative
+	}
+	
+	text = {
+		trigger = {
+			check_variable = { sov_culture_war_variable > 2.9}
+			check_variable = { sov_culture_war_variable < 4.9}
+		}
+		localization_key = culture_war_leaning_conservative
+	}
+	
+	text = {
+		trigger = {
+			check_variable = { sov_culture_war_variable = 5}
+		}
+		localization_key = culture_war_leaning_extremely_conservative
+	}
+	
+	text = {
+		trigger = {
+			check_variable = { sov_culture_war_variable < 0}
+			check_variable = { sov_culture_war_variable > -2.9}
+		}
+		localization_key = culture_war_leaning_slightly_liberal
+	}
+	
+	text = {
+		trigger = {
+			check_variable = { sov_culture_war_variable < -2.9}
+			check_variable = { sov_culture_war_variable > -4.9}
+		}
+		localization_key = culture_war_leaning_liberal
+	}
+	
+	text = {
+		trigger = {
+			check_variable = { sov_culture_war_variable = -5}
+		}
+		localization_key = culture_war_leaning_extremely_liberal
+	}
+	
+
+
+}
+defined_text = {
+	name = SOV_our_old_enemies_in_yugo_focus
+	text = {
+		trigger = {
+			YUG = {
+				OR = {
+				has_government  = reformed_communism
+				has_government  = communism
+				}
+			}
+		}
+		localization_key = SOV_our_old_enemies_in_yugo_focus_yug_is_communist_loc_key
+	}
+	text = {
+		trigger = {
+			YUG = {
+				has_government  = fascism
+			}
+		}
+		localization_key = SOV_our_old_enemies_in_yugo_focus_yug_is_nationalist_loc_key
+	}
+
+}
+defined_text = {
+	name = SOV_an_offer_yugo_cant_refuse_focus 
+	text = {
+		trigger = {
+			YUG = {
+				OR = {
+				has_government  = reformed_communism
+				has_government  = communism
+				}
+			}
+		}
+		localization_key = SOV_an_offer_yugo_cant_refuse_focus_yug_is_communist_loc_key
+	}
+	text = {
+		trigger = {
+			YUG = {
+				has_government  = fascism
+			}
+		}
+		localization_key = SOV_an_offer_yugo_cant_refuse_focus_yug_is_nationalist_loc_key
+	}
+
+}

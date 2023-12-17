@@ -1,0 +1,79 @@
+ideas = {
+
+	country = {
+
+		PAK_no_relation_with_india = {
+			name = PAK_no_relation_with_india_name
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+			
+			#picture = 	
+
+			modifier = {
+				political_power_gain = -0.25
+			}
+		}
+		
+		
+		
+		PAK_rampant_corruption = {
+			name = PAK_rampant_corruption_name
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+			
+			#picture = 
+
+			modifier = {
+				stability_factor = -0.15
+				political_power_gain = -0.25
+			}
+		}
+		
+		PAK_religious_tension = {
+			name = PAK_religious_tension_name
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+			
+			#picture = 
+
+			modifier = {
+			
+			stability_factor = -0.15
+			political_power_gain = -0.25
+			
+			}
+	    }
+			
+	    PAK_muslim_state = {
+			name = PAK_muslim_state_name
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+			
+			#picture =
+
+			modifier = {
+		
+			
+			}
+	    }
+		
+
+	}
+
+}
